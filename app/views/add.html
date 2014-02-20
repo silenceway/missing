@@ -1,0 +1,43 @@
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-sm-12 addNew" ng-controller="AddCtrl">
+			<form role="form">
+				<div class="form-group">
+					<label>Foto:</label>
+					<input type="file" ng-model="newPicture"></input>
+					<br>
+					<input class="btn btn-primary" type="submit" value="Cargar Foto">
+				</div>
+				<div class="form-group">
+					<label>Nombre:</label>
+					<input type="text" ng-model="newName"></input>
+				</div>
+
+				<div class="form-group">
+					<label>Cédula:</label>
+					<input type="text" ng-model="newId"></input>
+				</div>
+				<div class="form-group">
+					<label>Estado:</label>
+					<select class="form-control" name="estado" ng-model="newStatus" ng-options="newStatus.stat for newStatus in newStatus">
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Edad</label>
+					<input type="text" ng-model="newAge"></input>
+				</div>
+				<div class="form-group">
+					<label>Ciudad</label>
+					<input type="text" ng-model="newCity"></input>
+				</div>
+				<div class="form-group">
+					<label>Más Información</label>
+					<input type="text" ng-model="newInfo"></input>
+				</div>
+
+				<input type="submit" class="btn btn-primary" value="Publicar">
+			</form>
+		</div>
+	</div>
+</div>

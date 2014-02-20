@@ -1,0 +1,17 @@
+<div class="row" ng-controller="MissingCtrl">
+    <ul class="missing-person">
+      <li class="thumbnail" ng-repeat="data in datos">
+          <img ng-src="/{{picture}}" alt="...">
+          <div class="caption">
+            <h3>{{missing.data.name}}</h3>
+            <ul class="missing-data">
+              <li><strong>Edad:</strong> {{data.age}}</li>
+              <li><strong>Cédula:</strong> {{data.id}}</li>
+              <li><strong>Ciudad:</strong> {{data.city}}</li>
+              <li><strong>Status:</strong> {{data.status}}</li>
+              <li><strong>Más Info:</strong> {{data.info}}</li>
+            </ul>
+          </div>
+      </li>
+    </ul>
+</div>
